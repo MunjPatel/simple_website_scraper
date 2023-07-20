@@ -1,6 +1,7 @@
 import json
 from scraper_exceptions.exceptions import UACreateError
 from logging_functions.logs import Logger
+from typing import Union
 from faker import Faker
 from fake_useragent import UserAgent as ua_exception
 from my_fake_useragent import UserAgent as ua_priority
@@ -16,7 +17,7 @@ class FakeUserAgent:
     It comprises of the fake_ua() method which can be called to generate the user-agent string.
 
     """
-    def fake_ua(self)->str:
+    def fake_ua(self)->Union[str,None]:
         """
         
         Uses fake_useragent and my_fake_useragent libraries to generate a user-agent string.
