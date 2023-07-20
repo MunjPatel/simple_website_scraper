@@ -40,34 +40,37 @@ class ZeroResultsError(GSEExceptions):
     """
     pass
 
-class UACreateError(GSEExceptions or ScraperExceptions):
+class UACreateError(ScraperExceptions):
     """
     
-    Exception raised when fake user-agent generation fails.
-    
-    """
-    pass
-
-class ZeroUrlError(GSEExceptions or ScraperExceptions):
-    """
-    
-    Exception raised when an empty list of urls in passed to the threadpool-executor.
+    General exception for both website scraper without GSE and with GSE.
+    Raised when fake user-agent generation fails.
     
     """
     pass
 
-class WaitTimeError(GSEExceptions or ScraperExceptions):
+class ZeroUrlError(ScraperExceptions):
     """
     
-    Exception raised when the wait time value of 0 or less is given when making requests.
+    General exception for both website scraper without GSE and with GSE.
+    Raised when an empty list of urls in passed to the threadpool-executor.
     
     """
     pass
 
-class InvalidSimilarityMetric(GSEExceptions or ScraperExceptions):
+class WaitTimeError(ScraperExceptions):
     """
     
-    Exception raised when the similarity metric entered by user is not one of values of: 
+    General exception for both website scraper without GSE and with GSE.
+    Raised when the wait time value of 0 or less is given when making requests.
+    
+    """
+    pass
+
+class InvalidSimilarityMetric(ScraperExceptions):
+    """
+    General exception for both website scraper without GSE and with GSE.
+    Raised when the similarity metric entered by user is not one of values of: 
 
     (1) r(ratio)
     (2) pr(partial_ratio)
