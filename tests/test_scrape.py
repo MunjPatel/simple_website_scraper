@@ -9,6 +9,6 @@ class TestScraper(unittest.TestCase):
     def test_header(self):
         self.assertEqual(type(header_dictionary()),dict,"Incorrect headers.")
     def test_gse_simi(self):
-        self.assertEqual(type(GoogleSearchSimilarity().score(search_string="Writing unit and integration tests in python.",num_results=10,wait_time=10)),dict,"Invalid similarity score format.")
+        self.assertEqual(type(GoogleSearchSimilarity().score(search_string="Fetch live stock data in python.",num_results=5,wait_time=10)),dict,"Invalid similarity score format.")
 
 unittest.main()
