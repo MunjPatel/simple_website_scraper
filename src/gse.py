@@ -13,7 +13,7 @@ similarity_score = SimilarityScore()
 class GoogleSearchUrls:
     def __init__(self)->None:
         pass
-    def get_urls(self,search_string:str,num_results:int, wait_period:str)->list:
+    def get_urls(self,search_string:str,num_results:int, wait_period:int)->list:
         """
         
         Function that generates a list of URLs. It will exclude any google/youtube links. 
