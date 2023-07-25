@@ -112,7 +112,6 @@ class GoogleSearchSimilarity:
 
 if __name__ == "__main__":
     search = GoogleSearchSimilarity()
-    strings = ["Assumptions of Linear Regression model.","Assumptions of MLR model.","SSR, SSE and SST in regression."]
-    for string in strings:
-        results = search.score(search_string=string, num_results=105, wait_time=1)
-        print(results)
+    string = "Attach interactive plots in email using python."
+    results = search.score(search_string=string, num_results=105, wait_time=10)
+    print(results)
