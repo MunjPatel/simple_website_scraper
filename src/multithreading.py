@@ -9,43 +9,6 @@ from requests.exceptions import ConnectionError, HTTPError, ConnectTimeout, Time
 ua_instance = FakeUserAgent()
 user_agent = ua_instance.fake_ua()
 
-# class SimilarityScore:
-#     """
-    
-#     Method that generates dictionary of url and similarity %.
-
-#     Inputs: self
-#     Outputs: list
-        
-#     """
-#     def calculate(self,url:str,input_string:str, wait_time:int)->dict:
-#         try:
-#             try:
-#                 response = re.get(url,timeout=wait_time, headers={'User-Agent':user_agent})
-#                 response.raise_for_status()
-#                 text = BeautifulSoup(response.text, "html.parser")
-#                 for data in text("style", "script"):
-#                     data.decompose()
-#                 text = " ".join(text.stripped_strings).encode("ascii", "ignore").decode()
-#                 score = token_set_ratio(text, input_string)
-#                 log_instance.get_info(f"{url} responded successfully. Similarity = {score}%.")
-#                 return {url:score}
-#             except:
-#                 log_instance.get_warning(f"{url} failed to respond, skipping it.")
-#                 return {url:0}
-#         except ConnectionError:
-#                 raise ConnectionError("Encountered an error while trying to connect to website server.")
-#         except HTTPError:
-#                 raise HTTPError("Request unsuccessfull.")
-#         except ValueError:
-#                 raise ValueError("Failed to decode server json response.")
-#         except ConnectTimeout:
-#                 raise ConnectTimeout("Request timed-out while trying to connect to remote server.")
-#         except Timeout:
-#                 raise Timeout("Failed to complete request in timeout-period.")
-#         except Exception as e:
-#                 raise Exception(f"Following error occured: {str(e)}.")
-
 class SimilarityScore:
     """
     
