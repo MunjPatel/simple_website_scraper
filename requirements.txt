@@ -6,4 +6,4 @@ fuzzywuzzy==0.18.0
 my_fake_useragent==0.2.1
 requests==2.28.2
 setuptools==58.1.0
-python-Levenshtein==0.21.1 
+python-Levenshtein==0.21.1
