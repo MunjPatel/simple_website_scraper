@@ -110,8 +110,8 @@ class GoogleSearchSimilarity:
         else:
             raise ZeroUrlError(_arg_ = "Failed to generate urls from GSE. Make sure your input string is correct and internet connection is stable.")
 
-if __name__ == "__main__":
-    search = GoogleSearchSimilarity()
-    string = "Attach interactive plots in email using python."
-    results = search.score(search_string=string, num_results=105, wait_time=10)
-    print(results)
+# if __name__ == "__main__":
+#     search = GoogleSearchSimilarity()
+#     string = "Introduction to trading using python."
+#     results = search.score(search_string=string, num_results=100, wait_time=10)
+#     print(results)
