@@ -161,3 +161,13 @@ cython_debug/
 
 # Ignoring the structure file
 strc.yml
+
+# Ignoring dashboard file
+dashboard
+
+# Ignoring google-api files
+google_search_engine.json
+test_api.py
+
+# Ignoring the response file
+response.xlsx
